@@ -77,3 +77,4 @@ CREATE TABLE IF NOT EXISTS activities (
   created_by text DEFAULT 'You',
   created_at timestamptz DEFAULT now()
 );
+ALTER TABLE manufacturers ADD COLUMN IF NOT EXISTS notes text DEFAULT ''; ADD COLUMN IF NOT EXISTS email_domain text DEFAULT ''; ADD COLUMN IF NOT EXISTS email_format text DEFAULT '{first}.{last}';
